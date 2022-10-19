@@ -16,7 +16,7 @@ driver.get('http://www.google.com')
 search = driver.find_element(by=By.NAME, value="q")
 search.send_keys("www.techbeginner.in")
 time.sleep(2)
-driver.find_element(by=By.XPATH, 'driver.find_element(by=By.NAME, value="q")').click()
+driver.find_element(by=By.XPATH, '//*[@id="rso"]/div[1]/div/div/div[1]/div/a/h3').click()
 search.send_keys(Keys.RETURN)
  
 time.sleep(5)
