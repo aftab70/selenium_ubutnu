@@ -15,6 +15,8 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), opti
 driver.get('http://www.google.com')
 search = driver.find_element(by=By.NAME, value="q")
 search.send_keys("www.techbeginner.in")
+time.sleep(2)
+driver.find_element(by=By.XPATH, 'driver.find_element(by=By.NAME, value="q")').click()
 search.send_keys(Keys.RETURN)
  
 time.sleep(5)
